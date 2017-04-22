@@ -1,9 +1,10 @@
 {
-  "name": "MotleyAmsterdam",
+  "name": "react-vr-instagram",
   "version": "0.0.1",
-  "private": true,
   "scripts": {
-    "start": "node -e \"console.log('open browser at http:/localhost:8081/vr/\\n\\n');\" && node node_modules/react-native/local-cli/cli.js start",
+    "start-vr": "node -e \"console.log('open browser at http:/localhost:8081/vr/\\n\\n');\" && node node_modules/react-native/local-cli/cli.js start",
+    "start-backend": "node server.js",
+    "start": "npm-run-all -p start-vr start-backend",
     "bundle": "node node_modules/react-vr/scripts/bundle.js",
     "open": "node -e \"require('xopen')('http://localhost:8081/vr/')\"",
     "test": "jest"
@@ -13,6 +14,7 @@
     "eslint-config-motley": "^6.1.0",
     "express": "^4.15.2",
     "node-fetch": "^1.6.3",
+    "npm-run-all": "^4.0.2",
     "ovrui": "~1.0.0",
     "ramda": "^0.23.0",
     "react": "~15.4.1",
