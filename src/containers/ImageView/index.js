@@ -38,7 +38,7 @@ class ImageViewContainer extends Component {
           onViewClick={onViewClick}
           style={{
             transform: [
-              { translate: [0, 0.25, -2] },
+              { translate: [0, 1, -2] },
             ],
           }}
         />

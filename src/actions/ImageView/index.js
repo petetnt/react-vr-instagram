@@ -37,7 +37,8 @@ export const loadImages = username => (dispatch) => {
         };
       });
 
-      dispatch(loadImagesSuccess(images));
+      // Currently we can only show 8 images...
+      dispatch(loadImagesSuccess(images.slice(0, 8)));
     }).catch((err) => {
       console.error(err); // eslint-disable-line
       dispatch(loadImagesError(err));

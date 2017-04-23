@@ -6,7 +6,6 @@ const NavButton = ({ onViewClick, username, style }) => (
   <VrButton
     style={{
       width: 1,
-      height: 1,
       transform: [
         { translate: [0, 0, -2] },
       ],
