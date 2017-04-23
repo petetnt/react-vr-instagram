@@ -4,11 +4,13 @@ import { func } from "prop-types";
 import { connect } from "react-redux";
 import { setUsername } from "../../actions";
 import NavButton from "../../components/NavButton";
+import Keyboard from "../../components/Keyboard";
 
 const ButtonViewContainer = ({
   onViewClick,
 }) => (
   <View>
+    <Keyboard />
     <NavButton username="petetnt" onViewClick={onViewClick} />
     <NavButton username="valstu" onViewClick={onViewClick} />
     <NavButton username="doggosdoingthings" onViewClick={onViewClick} />

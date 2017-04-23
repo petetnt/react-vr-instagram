@@ -19,6 +19,7 @@ export default (state = initialState, action) => {
     return {
       ...state,
       username: action.username,
+      images: null,
       error: null,
       errorMessage: null,
     };
